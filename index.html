@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta charset="utf-8">
-    <title>Hello Coursera</title>
+    <title>My First AngularJS App</title>
   </head>
   <body>
-    <h1>Hello Coursera !!!</h1>
+    <h1>My First AngularJS App</h1>
+    <div ng-controller="MyFirstcontroller">
+      <input type="text" ng-model="name" ng-blur="upper()"/>
+      Numeric: {{getNumeric()}}
+    </div>
   </body>
 </html>
